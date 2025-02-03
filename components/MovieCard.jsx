@@ -1,11 +1,13 @@
 import { Link } from "expo-router";
-import { View, StyleSheet, Text, Image, Animated } from "react-native";
+import { View, StyleSheet, Text, Image, Pressable } from "react-native";
 import { Puntuacion } from "./Puntuacion";
 
 export function MovieCard({ Movie }) {
   return (
     <Link href={`/${Movie.id}`} asChild>
-        <View style={styles.card} key={Movie.id}>
+        <Pressable>
+        {({ pressed }) => (
+          <View style={[styles.card, pressed && styles.buttonPressed]} key={Movie.id}>
           <Image style={styles.image} source={{ uri: Movie.posterUrl }}/>
           <Puntuacion puntuacionActual={Movie.rating} puntuacionMaxima={100}/>
           
@@ -13,6 +15,8 @@ export function MovieCard({ Movie }) {
           <Text className="mb-1" style={styles.releaseDate}>{Movie.releaseDate}</Text>
           <Text className="mt-2 flex-shrink" style={styles.overview}>{Movie.overview.slice(0, 100)}...</Text>
         </View>
+        )}
+        </Pressable>
     </Link>
   );
 }
