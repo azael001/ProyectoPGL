@@ -1,0 +1,8 @@
+Token de acceso de lectura a la API:
+
+eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZmY0YWE4YjdmYmUwMTIxOTkxMTIyZDYwNDFjZmI2NiIsIm5iZiI6MTczODMxMjQzNC4xNzYsInN1YiI6IjY3OWM4YWYyZDQzODFhNGZjOTAxMmI1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.H5Dopux-xG_3M4yWAe_sSdkLD3s8Ed7N60qUtXcYyYE
+
+
+Clave de la API
+
+4ff4aa8b7fbe0121991122d6041cfb66
